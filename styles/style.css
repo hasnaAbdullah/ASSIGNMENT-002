@@ -37,6 +37,9 @@ p {
   color: #666666;
   font-size: 0.9rem;
 }
+a {
+  text-decoration: none;
+}
 .primary-btn {
   padding: 0.73rem 3rem;
   background-color: var(--orange);
@@ -91,7 +94,6 @@ ul.nav-items {
 ul.nav-items a.nav-link {
   font-size: 1.25rem;
   font-weight: 500;
-  text-decoration: none;
 }
 .menu-icon {
   display: none;
@@ -129,6 +131,56 @@ ul.nav-items a.nav-link {
   padding: 24px 0;
   color: var(--dark);
   font-weight: 500;
+}
+
+/* main styles start from here */
+/* curriculum styles start */
+.section-container1 {
+  background-image: ;
+}
+.curriculum-section {
+  text-align: center;
+  padding: 60px 0;
+}
+.curriculum-card-container {
+  display: flex;
+  margin: 80px 0;
+  gap: 28px;
+}
+.curriculum-card {
+  max-width: 366px;
+  padding: 55px 40px;
+  border-radius: 18px;
+  box-shadow: inset 0 0 28px 0.94px rgba(0, 0, 0, 10%);
+}
+.cur-card1 {
+  background-image: linear-gradient(#def5ff 0%, #fff 40%);
+}
+.cur-card2 {
+  background-image: linear-gradient(#fff4dc 0%, #fff 40%);
+}
+.cur-card3 {
+  background-image: linear-gradient(#f2e8ff 0%, #fff 40%);
+}
+.curriculum-card h3 {
+  margin-top: 32px;
+}
+.curriculum-card p {
+  margin: 33px 0;
+}
+.curriculum-card a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cur-card1 a {
+  color: var(--skyBlue);
+}
+.cur-card2 a {
+  color: var(--orange);
+}
+.cur-card3 a {
+  color: var(--deepPurple);
 }
 @media screen and (max-width: 576px) {
   h1 {
