@@ -137,6 +137,9 @@ ul.nav-items a.nav-link {
 /* curriculum styles start */
 .section-container1 {
   background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center 2px;
+  background-size: cover;
 }
 .curriculum-section {
   text-align: center;
@@ -189,6 +192,40 @@ ul.nav-items a.nav-link {
 .curriculum-arrows img {
   margin-left: 10px;
 }
+footer {
+  background-color: var(--skyBlue);
+  padding: 123px 0 150px 0;
+}
+.footer-inner-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--white);
+  column-gap: 100px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer-logo h2 {
+  font-size: 2.4rem;
+}
+.footer-inner-container p,
+.footer-menu a {
+  color: white;
+}
+ul.footer-menu {
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-media h3 {
+  margin-bottom: 20px;
+}
+.contact-media img {
+  margin-right: 10px;
+}
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 2.2rem;
@@ -214,6 +251,10 @@ ul.nav-items a.nav-link {
   .navbar-logo .nav-title,
   .curriculum-arrows {
     display: none;
+  }
+
+  .footer-inner-container {
+    grid-template-columns: 1fr;
   }
   .curriculum-card-container {
     flex-direction: column;
@@ -243,5 +284,34 @@ ul.nav-items a.nav-link {
   }
   .banner-profile-pic img {
     width: 90%;
+  }
+  footer {
+    padding: 70px 0;
+  }
+  .footer-inner-container {
+    column-gap: 20px;
+    padding: 10px;
+  }
+
+  .footer-logo h2 {
+    font-size: 2rem;
+  }
+  .footer-link {
+    margin: 30px 0;
+  }
+  ul.footer-menu {
+    display: block;
+    margin-top: 10px;
+  }
+  ul.footer-menu li a.nav-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 15px;
+  }
+  .footer-inner-container h3 {
+    font-size: 1.45rem;
+  }
+  .contact-media img {
+    margin-right: 15px;
   }
 }
