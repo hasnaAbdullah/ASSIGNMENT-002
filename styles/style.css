@@ -127,8 +127,29 @@ ul.nav-items a.nav-link {
 .banner-description {
   font-size: 20px;
   padding: 24px 0;
+  color: var(--dark);
+  font-weight: 500;
 }
 @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  .primary-btn {
+    padding: 12px 24px;
+    border-radius: 0.5rem;
+
+    font-size: 0.9rem;
+  }
+
   ul.nav-items,
   .navbar .btn,
   .navbar-logo .nav-title {
@@ -143,5 +164,16 @@ ul.nav-items a.nav-link {
   }
   .menu-icon img {
     width: 50px;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    padding: 20px 5px;
+    text-align: center;
+  }
+  .banner-description {
+    font-size: 14px;
+  }
+  .banner-profile-pic img {
+    width: 90%;
   }
 }
