@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/*  font-family: "Quicksand", serif; */
+:root {
+  --skyBlue: #01acfd;
+  --orange: #fea301;
+  --dark: #111111;
+  --white: #f7f7f7;
+  --aqua: #05d4df;
+  --purple: #5d58ef;
+  --kinderCard: #def5ff;
+  --elementaryCard: #fff4dc;
+  --middleCard: #f2e8ff;
+  --storyBg: #fea301;
+  --deepGreen: #95b226;
+  --deepPurple: #5d58f0;
+}
+/* remove all default margin and padding from all elements  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared styles start  */
+body:not(i) {
+  font-family: "Quicksand", serif;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  color: #666666;
+  font-size: 0.9rem;
+}
+.primary-btn {
+  padding: 0.63rem 3.75rem;
+  background-color: var(--orange);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #cb8100;
+}
+.secondary-btn {
+  background-color: var(--dark);
+}
+
+header,
+main,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+/* shared styles end */
+
+/* header section style start */
