@@ -38,7 +38,7 @@ p {
   font-size: 0.9rem;
 }
 .primary-btn {
-  padding: 0.63rem 3.75rem;
+  padding: 0.73rem 3rem;
   background-color: var(--orange);
   color: #ffffff;
   border: none;
@@ -69,3 +69,39 @@ section {
 /* shared styles end */
 
 /* header section style start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.navbar-logo .nav-title {
+  font-size: 2rem;
+}
+ul.nav-items {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+ul.nav-items a.nav-link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-link1 {
+  color: var(--orange);
+}
+.nav-link2 {
+  color: var(--skyBlue);
+}
+.nav-link3 {
+  color: var(--aqua);
+}
+.nav-link4 {
+  color: var(--purple);
+}
