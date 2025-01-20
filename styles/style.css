@@ -93,6 +93,9 @@ ul.nav-items a.nav-link {
   font-weight: 500;
   text-decoration: none;
 }
+.menu-icon {
+  display: none;
+}
 .nav-link1 {
   color: var(--orange);
 }
@@ -104,4 +107,20 @@ ul.nav-items a.nav-link {
 }
 .nav-link4 {
   color: var(--purple);
+}
+@media screen and (max-width: 576px) {
+  ul.nav-items,
+  .navbar .btn,
+  .navbar-logo .nav-title {
+    display: none;
+  }
+  nav {
+    border-bottom: 2px solid var(--orange);
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon img {
+    width: 50px;
+  }
 }
