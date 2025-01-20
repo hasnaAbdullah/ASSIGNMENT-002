@@ -108,12 +108,33 @@ ul.nav-items a.nav-link {
 .nav-link4 {
   color: var(--purple);
 }
+
+/* banner style start */
+.banner-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.banner-content {
+  max-width: 640px;
+}
+.orange-title {
+  color: var(--orange);
+}
+.skyBlue-title {
+  color: var(--skyBlue);
+}
+.banner-description {
+  font-size: 20px;
+  padding: 24px 0;
+}
 @media screen and (max-width: 576px) {
   ul.nav-items,
   .navbar .btn,
   .navbar-logo .nav-title {
     display: none;
   }
+
   nav {
     border-bottom: 2px solid var(--orange);
   }
