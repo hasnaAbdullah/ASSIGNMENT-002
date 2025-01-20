@@ -136,7 +136,7 @@ ul.nav-items a.nav-link {
 /* main styles start from here */
 /* curriculum styles start */
 .section-container1 {
-  background-image: ;
+  background-image: url("../assets/bg.png");
 }
 .curriculum-section {
   text-align: center;
@@ -151,7 +151,11 @@ ul.nav-items a.nav-link {
   max-width: 366px;
   padding: 55px 40px;
   border-radius: 18px;
-  box-shadow: inset 0 0 28px 0.94px rgba(0, 0, 0, 10%);
+  box-shadow: 0 0 28px 0.94px rgba(0, 0, 0, 10%);
+  transition: transform 0.4s;
+}
+.curriculum-card:hover {
+  transform: scale(1.05);
 }
 .cur-card1 {
   background-image: linear-gradient(#def5ff 0%, #fff 40%);
@@ -184,13 +188,13 @@ ul.nav-items a.nav-link {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   p {
     font-size: 14px;
@@ -207,7 +211,15 @@ ul.nav-items a.nav-link {
   .navbar-logo .nav-title {
     display: none;
   }
-
+  .curriculum-card-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .curriculum-card {
+    max-width: 400px;
+  }
   nav {
     border-bottom: 2px solid var(--orange);
   }
