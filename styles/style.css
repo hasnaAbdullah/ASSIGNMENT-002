@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /*  font-family: "Quicksand", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Raleway", serif; */
 :root {
   --skyBlue: #01acfd;
   --orange: #fea301;
@@ -39,6 +41,10 @@ p {
 }
 a {
   text-decoration: none;
+}
+/* for testing every section */
+.hide {
+  display: none;
 }
 .primary-btn {
   padding: 0.73rem 3rem;
@@ -192,6 +198,75 @@ ul.nav-items a.nav-link {
 .curriculum-arrows img {
   margin-left: 10px;
 }
+/* our stories style start */
+.section-container2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 162, 0, 25%) 0%,
+      #fff 100%
+    ),
+    url("../assets/bg.png");
+}
+.stories {
+  text-align: center;
+  padding: 60px 0;
+}
+.story-card-container {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.big-story {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.story-card {
+  border-radius: 16px;
+  background-color: var(--white);
+  text-align: left;
+}
+.story-card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.story-card h3,
+h5,
+p {
+  padding: 15px 38px;
+}
+.story-btn {
+  font-family: "Raleway", serif;
+  padding: 0.73rem 1.2rem;
+  background-color: #95b226;
+  color: #ffffff;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: -25px;
+  left: 20px;
+}
+.big-story .story-btn {
+  left: 50px;
+  background-color: var(--aqua);
+}
+.story-card:nth-child(3) .story-btn {
+  background-color: var(--deepPurple);
+}
+.big-story p {
+  padding-bottom: 35px;
+}
+.story-card h5 {
+  line-height: 1.5rem;
+  padding-top: 0px;
+}
+
+/* footer style start  */
 footer {
   background-color: var(--skyBlue);
   padding: 123px 0 150px 0;
@@ -226,6 +301,7 @@ ul.footer-menu {
 .contact-media img {
   margin-right: 10px;
 }
+/* footer style end  */
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 2.2rem;
