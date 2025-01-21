@@ -67,9 +67,22 @@ a {
 
 header,
 main,
-footer {
+footer,
+.marque-container {
   max-width: 1440px;
   margin: 0 auto;
+}
+.marque-container {
+  /* height: 70px; */
+  margin: 35px auto;
+  border-top: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+}
+marquee {
+  font-size: 2rem;
+  padding: 30px 0;
+  color: black;
+  font-weight: 600;
 }
 section {
   max-width: 1160px;
@@ -438,5 +451,8 @@ ul.footer-menu {
   }
   .curriculum-section {
     padding-top: 80px;
+  }
+  marquee {
+    font-size: 1.4rem;
   }
 }
