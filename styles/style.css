@@ -209,6 +209,12 @@ ul.nav-items a.nav-link {
 }
 .curriculum-arrows img {
   margin-left: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.curriculum-arrows img:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
 }
 /* our stories style start */
 .section-container2 {
